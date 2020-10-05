@@ -1,0 +1,50 @@
+{
+    "args": [
+        [
+            {
+                "prim": "DUP"
+            },
+            {
+                "prim": "CDR"
+            },
+            {
+                "args": [
+                    [
+                        {
+                            "prim": "CAR"
+                        }
+                    ]
+                ],
+                "prim": "DIP"
+            },
+            {
+                "prim": "DUP"
+            },
+            {
+                "prim": "SENDER"
+            },
+            {
+                "prim": "COMPARE"
+            },
+            {
+                "prim": "EQ"
+            },
+            {
+                "args": [
+                    [
+                        {
+                            "prim": "EXEC"
+                        }
+                    ],
+                    [
+                        {
+                            "prim": "FAILWITH"
+                        }
+                    ]
+                ],
+                "prim": "IF"
+            }
+        ]
+    ],
+    "prim": "code"
+}

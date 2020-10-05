@@ -1,0 +1,10 @@
+parameter (lambda address (pair (list operation) address)) ;
+storage address ;
+code { DUP ;
+       CDR ;
+       DIP { CAR } ;
+       DUP ;
+       SENDER ;
+       COMPARE ;
+       EQ ;
+       IF { EXEC } { FAILWITH } }
