@@ -1,0 +1,21 @@
+{
+  "name": "admin-lambda-taquito",
+  "version": "1.0.0",
+  "description": "A Taquito library to use the admin-lambda contract",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "ts-node ./index.ts | tee test.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/tqtezos/admin-lambda-contract"
+  },
+  "author": "Michael J. Klein",
+  "license": "MIT",
+  "dependencies": {
+    "@taquito/taquito": "^6.3.5-beta.0"
+  }
+}
+
+
