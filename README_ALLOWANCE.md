@@ -9,6 +9,10 @@ for examples using [Taquito](https://github.com/ecadlabs/taquito).
 
 ## Intro
 
+Note: The following examples use an old implementation that costs
+`5` additional bytes of storage. You can find more details
+[here](https://github.com/s-zeng/adminLambda-comparison).
+
 The [`AdminLambda`](https://gist.github.com/michaeljklein/a364e6624601f020647bf96e8d4277e0)
 contract may be used to emulate allowances in `FA2`.
 

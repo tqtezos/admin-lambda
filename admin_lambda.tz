@@ -1,8 +1,9 @@
 parameter (lambda address (pair (list operation) address)) ;
 storage address ;
 code { DUP ;
+       CAR ;
+       SWAP ;
        CDR ;
-       DIP { CAR } ;
        DUP ;
        SENDER ;
        COMPARE ;

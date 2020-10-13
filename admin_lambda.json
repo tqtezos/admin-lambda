@@ -5,17 +5,13 @@
                 "prim": "DUP"
             },
             {
-                "prim": "CDR"
+                "prim": "CAR"
             },
             {
-                "args": [
-                    [
-                        {
-                            "prim": "CAR"
-                        }
-                    ]
-                ],
-                "prim": "DIP"
+                "prim": "SWAP"
+            },
+            {
+                "prim": "CDR"
             },
             {
                 "prim": "DUP"

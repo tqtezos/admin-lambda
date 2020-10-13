@@ -34,14 +34,19 @@ allowances in [`FA2`](https://gitlab.com/tzip/tzip/-/blob/master/proposals/tzip-
 parameter (lambda address (pair (list operation) address)) ;
 storage address ;
 code { DUP ;
+       CAR ;
+       SWAP ;
        CDR ;
-       DIP { CAR } ;
        DUP ;
        SENDER ;
        COMPARE ;
        EQ ;
        IF { EXEC } { FAILWITH } }
 ```
+
+Note: The following examples use a slightly different implementation that costs
+`5` additional bytes of storage. You can find more details
+[here](https://github.com/s-zeng/adminLambda-comparison).
 
 ### Generic Multisig Parameters
 
@@ -122,8 +127,9 @@ Contract memorized as AdminLambda.
 adminLambda :: ContractCode (Lambda Address ([Operation], Address)) Address
 adminLambda = do
   dup
+  car
+  swap
   cdr
-  dip car
   dup
   sender
   eq
